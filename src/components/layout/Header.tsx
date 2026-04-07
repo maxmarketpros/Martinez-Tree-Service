@@ -33,12 +33,12 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt={siteConfig.name}
               width={180}
               height={54}
               priority
-              className="h-10 w-auto sm:h-12"
+              className="h-13 w-auto sm:h-[62px]"
             />
           </Link>
 

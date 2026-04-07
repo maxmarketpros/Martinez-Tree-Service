@@ -3,7 +3,7 @@ import type { ImageSlotConfig } from "@/types";
 export const imageManifest: Record<string, ImageSlotConfig> = {
   // ===== HOMEPAGE =====
   "hero-home": {
-    src: "/images/tree-trimming-hero.jpg",
+    src: "/images/tree-trimming-hero.webp",
     alt: "Professional tree trimming service in Aurora, IL",
     width: 1920,
     height: 1080,
@@ -26,25 +26,25 @@ export const imageManifest: Record<string, ImageSlotConfig> = {
 
   // ===== SERVICE CARDS =====
   "service-1": {
-    src: "/images/tree-removal-hero.jpg",
+    src: "/images/tree-removal-hero.webp",
     alt: "Tree removal service using grapple loader in Aurora, IL",
     width: 800,
     height: 600,
   },
   "service-2": {
-    src: "/images/tree-trimming-hero.jpg",
+    src: "/images/tree-trimming-hero.webp",
     alt: "Professional tree trimming and pruning in Aurora, IL",
     width: 800,
     height: 600,
   },
   "service-3": {
-    src: "/images/stump-removal-hero.jpg",
+    src: "/images/stump-removal-hero.webp",
     alt: "Stump grinding and removal service in Aurora, IL",
     width: 800,
     height: 600,
   },
   "service-4": {
-    src: "/images/land-clearing-hero.jpg",
+    src: "/images/land-clearing-hero.webp",
     alt: "Lot and land clearing service in Aurora, IL",
     width: 800,
     height: 600,
@@ -52,20 +52,20 @@ export const imageManifest: Record<string, ImageSlotConfig> = {
 
   // ===== TREE REMOVAL PAGE =====
   "service-1-hero": {
-    src: "/images/tree-removal-hero.jpg",
+    src: "/images/tree-removal-hero.webp",
     alt: "Professional tree removal service in Aurora, IL",
     width: 1920,
     height: 600,
     focalPoint: { x: 0.5, y: 0.4 },
   },
   "service-1-detail-1": {
-    src: "/images/tree-removal-detail-1.jpg",
+    src: "/images/tree-removal-detail-1.webp",
     alt: "Wood chipper processing tree branches during removal project",
     width: 800,
     height: 600,
   },
   "service-1-detail-2": {
-    src: "/images/tree-removal-detail-2.jpg",
+    src: "/images/tree-removal-detail-2.webp",
     alt: "Excavator removing tree from wooded lot in Aurora area",
     width: 800,
     height: 600,
@@ -73,20 +73,20 @@ export const imageManifest: Record<string, ImageSlotConfig> = {
 
   // ===== TREE TRIMMING PAGE =====
   "service-2-hero": {
-    src: "/images/tree-trimming-hero.jpg",
+    src: "/images/tree-trimming-hero.webp",
     alt: "Professional tree trimming and pruning in Aurora, IL",
     width: 1920,
     height: 600,
     focalPoint: { x: 0.5, y: 0.4 },
   },
   "service-2-detail-1": {
-    src: "/images/tree-trimming-detail-1.jpg",
+    src: "/images/tree-trimming-detail-1.webp",
     alt: "Precision pruning shears used for tree trimming in Aurora",
     width: 800,
     height: 600,
   },
   "service-2-detail-2": {
-    src: "/images/tree-trimming-detail-2.jpg",
+    src: "/images/tree-trimming-detail-2.webp",
     alt: "Loppers pruning tree branch for proper growth and health",
     width: 800,
     height: 600,
@@ -94,20 +94,20 @@ export const imageManifest: Record<string, ImageSlotConfig> = {
 
   // ===== STUMP REMOVAL PAGE =====
   "service-3-hero": {
-    src: "/images/stump-removal-hero.jpg",
+    src: "/images/stump-removal-hero.webp",
     alt: "Stump grinding service in Aurora, IL",
     width: 1920,
     height: 600,
     focalPoint: { x: 0.5, y: 0.4 },
   },
   "service-3-detail-1": {
-    src: "/images/stump-removal-detail-1.jpg",
+    src: "/images/stump-removal-detail-1.webp",
     alt: "Stump grinder removing tree stump below ground level",
     width: 800,
     height: 600,
   },
   "service-3-detail-2": {
-    src: "/images/stump-removal-detail-2.jpg",
+    src: "/images/stump-removal-detail-2.webp",
     alt: "Large tracked stump grinder on residential lawn in Aurora",
     width: 800,
     height: 600,
@@ -115,20 +115,20 @@ export const imageManifest: Record<string, ImageSlotConfig> = {
 
   // ===== LOT AND LAND CLEARING PAGE =====
   "service-4-hero": {
-    src: "/images/land-clearing-hero.jpg",
+    src: "/images/land-clearing-hero.webp",
     alt: "Professional lot and land clearing in Aurora, IL",
     width: 1920,
     height: 600,
     focalPoint: { x: 0.5, y: 0.4 },
   },
   "service-4-detail-1": {
-    src: "/images/land-clearing-detail-1.jpg",
+    src: "/images/land-clearing-detail-1.webp",
     alt: "Compact track loader clearing land for development",
     width: 800,
     height: 600,
   },
   "service-4-detail-2": {
-    src: "/images/land-clearing-detail-2.jpg",
+    src: "/images/land-clearing-detail-2.webp",
     alt: "Excavator and loader clearing wooded lot in Fox Valley area",
     width: 800,
     height: 600,
@@ -167,19 +167,19 @@ export const imageManifest: Record<string, ImageSlotConfig> = {
 
   // ===== TESTIMONIALS =====
   "testimonial-1": {
-    src: "/images/testimonial-1.jpg",
+    src: "/images/testimonial-1.webp",
     alt: "Client portrait",
     width: 200,
     height: 200,
   },
   "testimonial-2": {
-    src: "/images/testimonial-2.jpg",
+    src: "/images/testimonial-2.webp",
     alt: "Client portrait",
     width: 200,
     height: 200,
   },
   "testimonial-3": {
-    src: "/images/testimonial-3.jpg",
+    src: "/images/testimonial-3.webp",
     alt: "Client portrait",
     width: 200,
     height: 200,
@@ -187,13 +187,13 @@ export const imageManifest: Record<string, ImageSlotConfig> = {
 
   // ===== BRANDING =====
   logo: {
-    src: "/images/logo.png",
+    src: "/images/logo.webp",
     alt: "Martinez Tree Services logo",
     width: 200,
     height: 60,
   },
   "logo-white": {
-    src: "/images/logo.png",
+    src: "/images/logo.webp",
     alt: "Martinez Tree Services logo",
     width: 200,
     height: 60,

@@ -17,7 +17,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt={siteConfig.name}
                 width={160}
                 height={48}

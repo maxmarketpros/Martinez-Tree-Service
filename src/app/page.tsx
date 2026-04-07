@@ -50,7 +50,7 @@ export default function HomePage() {
         imageKey={content.aboutPreview.image}
         imagePosition="right"
         badge={content.aboutPreview.badge}
-        imageAspect="4/5"
+        imageAspect="16/10"
       >
         <SectionHeading
           eyebrow={content.aboutPreview.eyebrow}
