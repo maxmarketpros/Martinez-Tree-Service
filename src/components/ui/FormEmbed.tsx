@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect } from "react";
 import { FileText } from "lucide-react";
 import { businessConfig } from "@/config/business";
 import { cn } from "@/lib/utils";
@@ -7,13 +10,20 @@ interface FormEmbedProps {
   height?: string;
 }
 
-// Reusable form embed component.
-// Renders the client's iframe form if configured in business.ts,
-// otherwise shows a styled placeholder indicating where the form will go.
-
 export function FormEmbed({ className, height }: FormEmbedProps) {
   const embedUrl = businessConfig.formEmbedUrl;
   const embedHeight = height || businessConfig.formEmbedHeight;
+
+  useEffect(() => {
+    if (!embedUrl) return;
+    const id = "ghl-form-embed-script";
+    if (document.getElementById(id)) return;
+    const script = document.createElement("script");
+    script.id = id;
+    script.src = "https://link.msgsndr.com/js/form_embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, [embedUrl]);
 
   if (embedUrl) {
     return (
@@ -23,11 +33,22 @@ export function FormEmbed({ className, height }: FormEmbedProps) {
         className={cn("w-full border-0 rounded-xl", className)}
         style={{ height: embedHeight }}
         loading="lazy"
+        id="inline-3adWwbTm0kEVWbgn2itC"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="WebSite Form Template"
+        data-height="695"
+        data-layout-iframe-id="inline-3adWwbTm0kEVWbgn2itC"
+        data-form-id="3adWwbTm0kEVWbgn2itC"
       />
     );
   }
 
-  // Placeholder when no form embed URL is configured
   return (
     <div
       className={cn(
