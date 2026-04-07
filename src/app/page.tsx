@@ -14,6 +14,7 @@ import { ChecklistGrid } from "@/components/sections/ChecklistGrid";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { ChecklistItem } from "@/components/ui/ChecklistItem";
+import { WrestlingBanner } from "@/components/sections/WrestlingBanner";
 import { homepageContent } from "@/config/homepage";
 import { homepageFaqKeys } from "@/config/faqs";
 import { ArrowRight } from "lucide-react";
@@ -118,6 +119,9 @@ export default function HomePage() {
         primaryCta={{ label: "Get a Quote", href: "/contact" }}
         secondaryCta={{ label: "Call (503) 278-6068", href: "tel:+15032786068" }}
       />
+
+      {/* Wrestling Community Banner */}
+      <WrestlingBanner />
 
       {/* Testimonials */}
       <TestimonialSection
