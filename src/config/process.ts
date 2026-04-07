@@ -3,30 +3,30 @@ import type { ProcessStep } from "@/types";
 export const processSteps: ProcessStep[] = [
   {
     step: 1,
-    title: "Consultation",
+    title: "Free Consultation",
     description:
-      "We start with a thorough discussion of your project goals, budget, and timeline. This is where we listen, assess, and begin building your custom plan.",
+      "Contact us by phone or through our online form. We will schedule a convenient time to visit your property, assess the situation, and discuss your goals.",
     icon: "MessageSquare",
   },
   {
     step: 2,
-    title: "Planning & Estimate",
+    title: "Assessment and Estimate",
     description:
-      "You receive a detailed proposal with transparent line-item pricing, a clear project timeline, and a comprehensive scope of work — no surprises.",
+      "Our team evaluates the trees, access points, and any potential hazards on site. You receive a detailed written estimate with transparent pricing before any work begins.",
     icon: "FileText",
   },
   {
     step: 3,
-    title: "Execution",
+    title: "Professional Tree Work",
     description:
-      "Our team gets to work with daily coordination, quality checkpoints, and regular progress updates. We treat your project like our own.",
-    icon: "Hammer",
+      "Our experienced crew arrives on schedule with professional grade equipment. Every job follows strict safety protocols to protect your property and everyone on site.",
+    icon: "TreePine",
   },
   {
     step: 4,
-    title: "Final Walkthrough",
+    title: "Complete Site Cleanup",
     description:
-      "We don't consider a project done until you're completely satisfied. A thorough final inspection ensures every detail meets our exacting standards.",
+      "We remove all debris, chips, and wood from your property. We do not consider the job done until your yard looks as good or better than when we arrived.",
     icon: "CheckCircle",
   },
 ];

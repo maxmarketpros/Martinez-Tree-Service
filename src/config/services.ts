@@ -2,412 +2,549 @@ import type { ServiceConfig } from "@/types";
 
 export const services: ServiceConfig[] = [
   {
-    slug: "service-one",
-    title: "Service One",
+    slug: "tree-removal",
+    title: "Tree Removal",
     excerpt:
-      "Full-service delivery from initial consultation through final completion. We lead every phase with clear accountability and direct communication.",
-    icon: "Hammer",
+      "Safe, complete tree removal for residential and commercial properties across Aurora and the Fox Valley. From hazardous trees to planned clearing, our experienced crew handles removals of every size.",
+    icon: "TreePine",
     cardImage: "service-1",
     heroImage: "service-1-hero",
     description: [
-      "Our flagship service combines deep expertise with meticulous attention to detail. From the initial assessment through final delivery, every step is managed with precision and care.",
-      "We bring over 15 years of hands-on experience to every project, ensuring that the work meets the highest standards of quality and durability. Our team handles everything so you can focus on what matters most.",
+      "Tree removal in Aurora, IL is one of the most requested services we provide at Martinez Tree Services. Whether a tree is dead, diseased, storm damaged, or simply in the way of a new project, our crew has the training, equipment, and over 34 years of experience to remove it safely and efficiently.",
+      "We handle tree removals of all sizes, from small ornamental trees to large mature hardwoods in tight residential spaces. Every removal follows a planned approach that prioritizes the safety of your property, your neighbors, and our crew. We use professional grade rigging, bucket trucks, and chipping equipment to complete the job cleanly and on schedule.",
     ],
     benefits: [
       {
-        title: "Expert Execution",
+        title: "Safe, Controlled Removal",
         description:
-          "Every project is led by seasoned professionals with proven track records in the field.",
+          "Every tree removal follows a planned sequence using proper rigging and cutting techniques to protect your property.",
         icon: "Shield",
       },
       {
         title: "Transparent Pricing",
         description:
-          "Detailed line-item estimates before work begins. No hidden fees, no surprises.",
+          "You receive a detailed written estimate before any work begins. No hidden fees and no surprise charges.",
         icon: "Receipt",
       },
       {
-        title: "Quality Materials",
+        title: "Professional Equipment",
         description:
-          "We source only premium materials from trusted suppliers, built to last in any condition.",
-        icon: "Package",
+          "Bucket trucks, grapple loaders, wood chippers, and professional rigging gear for every type of removal.",
+        icon: "Truck",
       },
       {
-        title: "On-Time Delivery",
+        title: "Complete Cleanup",
         description:
-          "Rigorous scheduling and daily coordination ensure your project stays on track.",
-        icon: "Clock",
+          "All wood, branches, and debris are removed from your property. We leave your yard clean and clear.",
+        icon: "CheckCircle",
       },
     ],
     features: [
-      "Comprehensive initial assessment",
-      "Detailed project planning",
-      "Premium material sourcing",
-      "Professional installation",
-      "Quality inspection at every phase",
-      "Final walkthrough and sign-off",
-      "Post-project warranty support",
-      "Dedicated project manager",
+      "Hazardous and dead tree removal",
+      "Storm damage cleanup and emergency removal",
+      "Large tree removal in tight spaces",
+      "Sectional dismantling and rigging",
+      "Wood chipping and debris hauling",
+      "Stump grinding available with removal",
+      "Permit coordination when required",
+      "Complete site cleanup included",
     ],
     detailImages: ["service-1-detail-1", "service-1-detail-2"],
     faqKeys: [
       "faq-general-1",
-      "faq-general-2",
-      "faq-general-3",
-      "faq-s1-1",
-      "faq-s1-2",
-      "faq-s1-3",
+      "faq-general-5",
+      "faq-tr-1",
+      "faq-tr-2",
+      "faq-tr-3",
+      "faq-tr-4",
     ],
-    ctaHeading: "Ready to Get Started?",
+    ctaHeading: "Need a Tree Removed?",
     ctaText:
-      "Schedule a free consultation and let us show you what quality service looks like.",
+      "Contact Martinez Tree Services for a free, no obligation estimate on tree removal in Aurora and the Fox Valley.",
     topicSectionA: {
       eyebrow: "Our Expertise",
-      heading: "Professional Service One Solutions in Springfield, IL",
+      heading: "Professional Tree Removal Solutions in Aurora, IL",
       subtitle:
-        "Comprehensive expertise across every aspect of Service One, backed by years of local experience.",
+        "Comprehensive tree removal expertise for residential and commercial properties across the Fox Valley.",
       items: [
         {
-          title: "Residential Projects",
+          title: "Residential Tree Removal",
           description:
-            "Tailored solutions for homeowners seeking quality craftsmanship and lasting results in their residential properties.",
+            "Safe removal of trees near homes, garages, fences, and utility lines with careful attention to surrounding landscaping.",
           icon: "Home",
         },
         {
-          title: "Commercial Applications",
+          title: "Commercial Tree Removal",
           description:
-            "Scalable service delivery for commercial properties, offices, and retail spaces with minimal disruption to operations.",
+            "Efficient tree removal for commercial properties, parking lots, and development sites with minimal disruption to business operations.",
           icon: "Building",
         },
         {
-          title: "Emergency Response",
+          title: "Emergency Tree Removal",
           description:
-            "Rapid response capability for urgent needs. Our team is equipped to handle time-sensitive situations efficiently.",
+            "Prompt response for storm damaged, fallen, or hazardous trees that pose an immediate safety risk to people or property.",
           icon: "AlertCircle",
         },
         {
-          title: "Preventive Maintenance",
+          title: "Hazardous Tree Assessment",
           description:
-            "Scheduled maintenance programs designed to prevent costly issues and extend the life of your investment.",
-          icon: "CalendarCheck",
+            "Professional evaluation of trees that may be dead, diseased, or structurally compromised and at risk of failure.",
+          icon: "SearchCheck",
         },
         {
-          title: "Code Compliance",
+          title: "Permit Coordination",
           description:
-            "Full compliance with local building codes and regulations. We handle permits and inspections seamlessly.",
+            "We handle tree removal permit requirements for the City of Aurora and surrounding Fox Valley municipalities.",
           icon: "ClipboardCheck",
         },
         {
-          title: "Energy Efficiency",
+          title: "Wood Recycling",
           description:
-            "Modern solutions that improve performance while reducing long-term operating costs and environmental impact.",
+            "All removed wood is chipped and recycled. Firewood and large trunk sections can be left on site if requested.",
           icon: "Leaf",
         },
       ],
     },
     topicSectionB: {
-      eyebrow: "Why Springfield Trusts Us",
-      heading: "Service One Built for Springfield's Needs",
+      eyebrow: "Why Aurora Trusts Us",
+      heading: "Tree Removal Built for Aurora and the Fox Valley",
       subtitle:
-        "Local knowledge and regional expertise that generic providers simply cannot match.",
+        "Local knowledge and over three decades of experience that set us apart.",
       items: [
         {
-          title: "Local Climate Expertise",
+          title: "34+ Years of Local Experience",
           description:
-            "We understand the unique challenges of the local climate and design solutions that perform year-round.",
-          icon: "Thermometer",
+            "We have removed thousands of trees across Aurora, Naperville, Batavia, and the surrounding communities.",
+          icon: "Award",
         },
         {
-          title: "Regional Code Knowledge",
+          title: "Fox Valley Tree Knowledge",
           description:
-            "Deep familiarity with Springfield area building codes, permitting processes, and inspection requirements.",
-          icon: "FileCheck",
+            "Deep familiarity with the oak, ash, elm, maple, and other species common throughout the Fox Valley region.",
+          icon: "TreePine",
         },
         {
-          title: "Trusted Local Suppliers",
+          title: "Fully Licensed and Insured",
           description:
-            "Established relationships with regional suppliers ensure premium materials at competitive pricing.",
-          icon: "Truck",
+            "Comprehensive liability insurance and workers compensation coverage on every job site.",
+          icon: "ShieldCheck",
         },
         {
-          title: "Community Reputation",
+          title: "Trusted Local Reputation",
           description:
-            "Built on word-of-mouth referrals from satisfied Springfield homeowners and business owners.",
+            "Built on decades of referrals from satisfied homeowners and property managers across the region.",
           icon: "Star",
         },
       ],
     },
   },
   {
-    slug: "service-two",
-    title: "Service Two",
+    slug: "tree-trimming-and-pruning",
+    title: "Tree Trimming and Pruning",
     excerpt:
-      "Premium solutions with meticulous attention to detail and the level of oversight that complex projects require. Built to your exact specifications.",
-    icon: "Wrench",
+      "Professional tree trimming and pruning to maintain the health, safety, and appearance of your trees. Scheduled maintenance and one time service available throughout the Fox Valley.",
+    icon: "Scissors",
     cardImage: "service-2",
     heroImage: "service-2-hero",
     description: [
-      "When your project demands precision and expertise, our second service offering delivers. We combine advanced techniques with time-tested methods to produce exceptional results.",
-      "Our approach starts with a thorough understanding of your needs. We develop a customized plan that addresses every detail, from material selection to timeline management, ensuring a seamless experience from start to finish.",
+      "Tree trimming in Aurora, IL is essential for maintaining the health and structural integrity of the trees on your property. Martinez Tree Services provides professional trimming and pruning for residential and commercial properties throughout Aurora and the Fox Valley region.",
+      "Our crew follows proper arboricultural pruning standards to remove dead, damaged, or overgrown branches while preserving the natural shape and health of the tree. Whether you need routine maintenance trimming, clearance pruning near structures and power lines, or crown reduction for overgrown trees, we deliver clean, professional results every time.",
     ],
     benefits: [
       {
-        title: "Custom Solutions",
+        title: "Proper Pruning Techniques",
         description:
-          "Every project is tailored to your specific needs, goals, and budget.",
-        icon: "Settings",
+          "Our crew follows ANSI A300 pruning standards to promote tree health and structural strength.",
+        icon: "Shield",
       },
       {
-        title: "Advanced Techniques",
+        title: "Improved Safety",
         description:
-          "We use the latest methods and technology to deliver superior results.",
-        icon: "Zap",
+          "Removal of dead, broken, and overhanging branches reduces the risk of property damage and personal injury.",
+        icon: "AlertCircle",
       },
       {
-        title: "Full Coordination",
+        title: "Enhanced Appearance",
         description:
-          "Seamless management of all teams, materials, and timelines under one roof.",
-        icon: "Users",
+          "Professional trimming improves curb appeal and maintains the natural beauty of your landscape.",
+        icon: "Eye",
       },
       {
-        title: "Lasting Results",
+        title: "Better Tree Health",
         description:
-          "Built with durability in mind, our work stands the test of time.",
-        icon: "Award",
+          "Strategic pruning improves air circulation and sunlight penetration, reducing disease and promoting new growth.",
+        icon: "Leaf",
       },
     ],
     features: [
-      "In-depth project consultation",
-      "Custom design and planning",
-      "Specialist team assignment",
-      "Precision execution",
-      "Regular progress updates",
-      "Multi-point quality checks",
-      "Comprehensive documentation",
-      "Extended warranty coverage",
+      "Crown cleaning and deadwood removal",
+      "Crown thinning for light and air circulation",
+      "Crown raising for clearance over structures and walkways",
+      "Crown reduction for overgrown trees",
+      "Hazard limb removal",
+      "Utility line clearance pruning",
+      "Vista pruning for improved views",
+      "Seasonal maintenance programs",
     ],
     detailImages: ["service-2-detail-1", "service-2-detail-2"],
     faqKeys: [
       "faq-general-1",
-      "faq-general-4",
       "faq-general-5",
-      "faq-s2-1",
-      "faq-s2-2",
-      "faq-s2-3",
+      "faq-tt-1",
+      "faq-tt-2",
+      "faq-tt-3",
+      "faq-tt-4",
     ],
-    ctaHeading: "Let's Discuss Your Project",
+    ctaHeading: "Keep Your Trees in Top Shape",
     ctaText:
-      "Every great project starts with a conversation. Reach out today for a free estimate.",
+      "Contact Martinez Tree Services for professional tree trimming and pruning in Aurora and the Fox Valley.",
     topicSectionA: {
-      eyebrow: "Specialized Solutions",
-      heading: "Advanced Service Two Capabilities in Springfield, IL",
+      eyebrow: "Trimming Expertise",
+      heading: "Professional Tree Trimming Services in Aurora, IL",
       subtitle:
-        "Specialized techniques and premium methods that deliver results beyond the ordinary.",
+        "Specialized trimming and pruning techniques for every type of tree care situation.",
       items: [
         {
-          title: "Custom Design",
+          title: "Residential Trimming",
           description:
-            "Bespoke design solutions created specifically for your property, preferences, and functional requirements.",
-          icon: "Palette",
+            "Regular trimming programs for homeowners to keep trees healthy, attractive, and safely away from structures and power lines.",
+          icon: "Home",
         },
         {
-          title: "Material Selection",
+          title: "Commercial Maintenance",
           description:
-            "Expert guidance on premium material options that balance aesthetics, durability, and budget.",
-          icon: "Layers",
+            "Scheduled trimming services for commercial properties, HOAs, and apartment complexes to maintain a professional appearance.",
+          icon: "Building",
         },
         {
-          title: "Technical Precision",
+          title: "Storm Damage Pruning",
           description:
-            "Advanced measurement and installation techniques that ensure flawless execution on every detail.",
+            "Corrective pruning to restore trees after storm damage, removing broken branches and rebalancing the canopy.",
+          icon: "CloudRain",
+        },
+        {
+          title: "Young Tree Training",
+          description:
+            "Structural pruning for young trees to establish strong branch architecture and reduce future maintenance needs.",
+          icon: "Sprout",
+        },
+        {
+          title: "Clearance Pruning",
+          description:
+            "Strategic branch removal to provide clearance for roofs, gutters, driveways, sidewalks, and utility lines.",
           icon: "Ruler",
         },
         {
-          title: "Quality Assurance",
+          title: "Seasonal Scheduling",
           description:
-            "Multi-point inspection protocols at every phase to guarantee work meets our exacting standards.",
-          icon: "BadgeCheck",
-        },
-        {
-          title: "Timeline Management",
-          description:
-            "Detailed scheduling with milestone tracking to keep your project on pace from start to finish.",
-          icon: "Timer",
-        },
-        {
-          title: "Post-Project Support",
-          description:
-            "Extended warranty coverage and responsive after-service support for complete peace of mind.",
-          icon: "LifeBuoy",
+            "We recommend the optimal pruning window for each tree species to maximize health benefits and minimize stress.",
+          icon: "CalendarCheck",
         },
       ],
     },
     topicSectionB: {
-      eyebrow: "Local Advantage",
-      heading: "Trusted Service Two Provider in Springfield, IL",
+      eyebrow: "Local Tree Care Experts",
+      heading: "Trusted Tree Trimming in Aurora and the Fox Valley",
       subtitle:
-        "Regional expertise and deep community roots that set us apart from national competitors.",
+        "Over three decades of professional tree trimming experience in the communities we call home.",
       items: [
         {
-          title: "15+ Years Local Experience",
+          title: "Species Knowledge",
           description:
-            "Over a decade and a half serving Springfield and surrounding communities with consistent excellence.",
-          icon: "Award",
+            "We understand the growth patterns, pruning needs, and common issues for every tree species in the Fox Valley.",
+          icon: "TreePine",
         },
         {
-          title: "Springfield-Area Specialists",
+          title: "Seasonal Awareness",
           description:
-            "Intimate knowledge of local property styles, construction methods, and environmental considerations.",
-          icon: "MapPin",
+            "Proper timing is critical. We schedule pruning based on species, season, and the specific goals of each client.",
+          icon: "Clock",
         },
         {
-          title: "Vetted Subcontractors",
+          title: "Property Protection",
           description:
-            "A curated network of local trade partners we trust to uphold our quality standards.",
-          icon: "UserCheck",
+            "Our crew takes care to protect your lawn, landscaping, and structures throughout the trimming process.",
+          icon: "ShieldCheck",
         },
         {
-          title: "Responsive Local Team",
+          title: "Clean Results",
           description:
-            "A team based right here in the area — available for site visits, adjustments, and ongoing support.",
-          icon: "PhoneCall",
+            "All trimmings, branches, and debris are removed. Your property looks better than when we arrived.",
+          icon: "Star",
         },
       ],
     },
   },
   {
-    slug: "service-three",
-    title: "Service Three",
+    slug: "stump-removal",
+    title: "Stump Removal",
     excerpt:
-      "Seamless coordination between all project stakeholders. We manage the full lifecycle so nothing falls through the cracks.",
-    icon: "ClipboardList",
+      "Professional stump grinding and removal to reclaim your yard. We eliminate unsightly stumps quickly and cleanly, restoring usable space to your property.",
+    icon: "CircleDot",
     cardImage: "service-3",
     heroImage: "service-3-hero",
     description: [
-      "Our third service focuses on comprehensive project management and coordination. We take the complexity out of large-scale work by providing a single point of accountability.",
-      "From procurement and scheduling to quality control and budget management, our team ensures every detail is handled professionally. You get complete transparency and peace of mind throughout the entire process.",
+      "Stump removal in Aurora, IL is the final step in completing a tree removal project, and it is one of the most common services requested by homeowners across the Fox Valley. Martinez Tree Services uses professional stump grinding equipment to remove stumps below ground level, eliminating tripping hazards and freeing up usable yard space.",
+      "Our stump grinders can handle stumps of any size, from small ornamental tree stumps to large hardwood stumps several feet in diameter. We grind the stump and major surface roots to a depth of 6 to 12 inches below grade, leaving you with a clean area ready for filling, reseeding, or new landscaping.",
     ],
     benefits: [
       {
-        title: "Single Point of Contact",
+        title: "Fast and Efficient",
         description:
-          "One dedicated manager handles all coordination, communication, and problem-solving.",
-        icon: "UserCheck",
+          "Most residential stumps are ground and cleaned up within a single visit, minimizing disruption to your day.",
+        icon: "Clock",
       },
       {
-        title: "Budget Control",
+        title: "Below Grade Grinding",
         description:
-          "Real-time budget tracking with transparent reporting at every milestone.",
-        icon: "DollarSign",
+          "Stumps are ground 6 to 12 inches below the surface, allowing for proper backfill and new planting.",
+        icon: "ArrowDown",
       },
       {
-        title: "Risk Management",
+        title: "Any Size Stump",
         description:
-          "Proactive identification and mitigation of potential issues before they become problems.",
-        icon: "ShieldCheck",
+          "Our equipment handles everything from small ornamental stumps to large hardwood stumps over three feet wide.",
+        icon: "Maximize",
       },
       {
-        title: "Complete Documentation",
+        title: "Clean Finish",
         description:
-          "Detailed records of every decision, change, and milestone for your peace of mind.",
-        icon: "FileText",
+          "Grindings are used to fill the hole or removed from the property. Your yard is left neat and level.",
+        icon: "CheckCircle",
       },
     ],
     features: [
-      "Full project scoping",
-      "Vendor and subcontractor management",
-      "Daily progress monitoring",
-      "Budget tracking and reporting",
-      "Safety protocol enforcement",
-      "Permit and compliance management",
-      "Milestone walkthroughs",
-      "Final closeout and documentation",
+      "Stump grinding below ground level",
+      "Surface root grinding included",
+      "Any size stump from small to large",
+      "Backfill with grinding chips or topsoil",
+      "Access to tight and hard to reach areas",
+      "Multiple stump discounts available",
+      "Post removal cleanup included",
+      "Ready for reseeding or new landscaping",
     ],
     detailImages: ["service-3-detail-1", "service-3-detail-2"],
     faqKeys: [
-      "faq-general-2",
-      "faq-general-5",
-      "faq-general-6",
-      "faq-s3-1",
-      "faq-s3-2",
-      "faq-s3-3",
+      "faq-general-1",
+      "faq-general-4",
+      "faq-sr-1",
+      "faq-sr-2",
+      "faq-sr-3",
+      "faq-sr-4",
     ],
-    ctaHeading: "Start Your Project Right",
+    ctaHeading: "Get Rid of That Stump",
     ctaText:
-      "Professional management from day one. Contact us to learn how we can help.",
+      "Contact Martinez Tree Services for fast, affordable stump grinding in Aurora and the surrounding area.",
     topicSectionA: {
-      eyebrow: "Full-Scope Management",
-      heading: "Comprehensive Service Three in Springfield, IL",
+      eyebrow: "Stump Grinding Expertise",
+      heading: "Professional Stump Removal Services in Aurora, IL",
       subtitle:
-        "End-to-end project oversight that keeps everything on track, on budget, and on standard.",
+        "Complete stump grinding solutions for residential and commercial properties across the Fox Valley.",
       items: [
         {
-          title: "Scope Development",
+          title: "Residential Stump Grinding",
           description:
-            "Thorough project scoping that defines every deliverable, timeline, and cost before work begins.",
-          icon: "Target",
+            "Remove stumps from front yards, backyards, and side yards to improve appearance and reclaim usable space.",
+          icon: "Home",
         },
         {
-          title: "Vendor Coordination",
+          title: "Commercial Stump Removal",
           description:
-            "Management of all subcontractors and suppliers with rigorous vetting and performance tracking.",
-          icon: "Network",
+            "Clear stumps from commercial properties, parking areas, and development sites for construction or landscaping.",
+          icon: "Building",
         },
         {
-          title: "Schedule Optimization",
+          title: "Multi Stump Projects",
           description:
-            "Strategic sequencing of work phases to minimize delays and maximize efficiency across all teams.",
-          icon: "CalendarClock",
+            "Volume discounts for properties with multiple stumps. Ideal for properties that have undergone major tree removal.",
+          icon: "Grid",
         },
         {
-          title: "Budget Transparency",
+          title: "Root Grinding",
           description:
-            "Line-item budget tracking with regular financial reporting so you always know where every dollar goes.",
-          icon: "PieChart",
+            "Surface roots that extend beyond the stump are ground down to prevent tripping hazards and mower damage.",
+          icon: "GitBranch",
         },
         {
-          title: "Safety Compliance",
+          title: "Site Restoration",
           description:
-            "Rigorous safety protocols and OSHA compliance enforced across every job site we manage.",
-          icon: "HardHat",
+            "The hole is backfilled with grinding chips or topsoil and leveled, leaving the area ready for grass seed or new plantings.",
+          icon: "Sprout",
         },
         {
-          title: "Quality Control",
+          title: "Tight Access Capability",
           description:
-            "Systematic inspection checkpoints and quality holdpoints that prevent issues before they escalate.",
-          icon: "SearchCheck",
+            "Our equipment can access stumps in fenced yards, narrow side lots, and other hard to reach locations.",
+          icon: "Shrink",
         },
       ],
     },
     topicSectionB: {
-      eyebrow: "Springfield Project Experts",
-      heading: "Service Three Trusted Across Springfield, IL",
+      eyebrow: "Why Choose Martinez",
+      heading: "Trusted Stump Removal in Aurora and the Fox Valley",
       subtitle:
-        "The local project management partner that property owners and developers rely on.",
+        "Over three decades of reliable stump grinding service for Fox Valley homeowners.",
       items: [
         {
-          title: "Multi-Phase Experience",
+          title: "Professional Equipment",
           description:
-            "Proven ability to manage complex, multi-phase projects across residential and commercial properties.",
-          icon: "Layers",
+            "We use commercial grade Vermeer stump grinders capable of handling any stump size quickly and safely.",
+          icon: "Settings",
         },
         {
-          title: "Permit Navigation",
+          title: "Same Day Estimates",
           description:
-            "Streamlined permitting through established relationships with local building departments.",
-          icon: "Stamp",
+            "Contact us and we will typically provide a written estimate within 24 hours of your request.",
+          icon: "Clock",
         },
         {
-          title: "Owner Representation",
+          title: "Affordable Pricing",
           description:
-            "We act as your on-site representative, protecting your interests at every decision point.",
-          icon: "Shield",
+            "Competitive rates with volume discounts for multiple stumps. No hidden fees or surprise charges.",
+          icon: "DollarSign",
         },
         {
-          title: "Closeout Excellence",
+          title: "Satisfaction Guaranteed",
           description:
-            "Comprehensive project closeout including documentation, warranties, and final accounting.",
-          icon: "CheckSquare",
+            "We are not finished until you are satisfied with the results. Our reputation depends on every job we complete.",
+          icon: "Star",
+        },
+      ],
+    },
+  },
+  {
+    slug: "lot-and-land-clearing",
+    title: "Lot and Land Clearing",
+    excerpt:
+      "Complete lot and land clearing for residential and commercial development projects. We clear trees, brush, stumps, and debris to prepare your site for construction or landscaping.",
+    icon: "Mountain",
+    cardImage: "service-4",
+    heroImage: "service-4-hero",
+    description: [
+      "Land clearing in Aurora, IL is a critical first step for any residential or commercial development project. Martinez Tree Services provides complete lot clearing services throughout Aurora and the Fox Valley region, removing trees, brush, stumps, and debris to prepare your property for its next phase.",
+      "Our crew uses excavators, compact track loaders, grapple equipment, and wood chippers to clear lots of any size efficiently and safely. Whether you are preparing a single residential lot for a new home build, clearing acreage for a commercial development, or cleaning up an overgrown property, we handle the entire process from start to finish.",
+    ],
+    benefits: [
+      {
+        title: "Complete Site Preparation",
+        description:
+          "Trees, brush, stumps, and debris are all removed, leaving a clean and graded site ready for the next phase.",
+        icon: "CheckSquare",
+      },
+      {
+        title: "Heavy Equipment Capability",
+        description:
+          "Excavators, track loaders, and grapple trucks allow us to handle large scale clearing projects efficiently.",
+        icon: "Truck",
+      },
+      {
+        title: "Residential and Commercial",
+        description:
+          "From single lot clearing for a new home to multi acre commercial projects, we scale to fit the job.",
+        icon: "Building",
+      },
+      {
+        title: "Responsible Disposal",
+        description:
+          "All cleared material is chipped, hauled, and disposed of responsibly. Wood is recycled whenever possible.",
+        icon: "Leaf",
+      },
+    ],
+    features: [
+      "Full lot clearing for new construction",
+      "Selective tree and brush removal",
+      "Stump grinding included in clearing",
+      "Brush and undergrowth removal",
+      "Debris hauling and disposal",
+      "Overgrown property cleanup",
+      "Grading preparation",
+      "Commercial and residential projects",
+    ],
+    detailImages: ["service-4-detail-1", "service-4-detail-2"],
+    faqKeys: [
+      "faq-general-1",
+      "faq-general-5",
+      "faq-lc-1",
+      "faq-lc-2",
+      "faq-lc-3",
+      "faq-lc-4",
+    ],
+    ctaHeading: "Ready to Clear Your Property?",
+    ctaText:
+      "Contact Martinez Tree Services for a free estimate on lot and land clearing in Aurora and the Fox Valley.",
+    topicSectionA: {
+      eyebrow: "Land Clearing Expertise",
+      heading: "Professional Lot and Land Clearing in Aurora, IL",
+      subtitle:
+        "Complete clearing solutions for properties of every size across the Fox Valley region.",
+      items: [
+        {
+          title: "Residential Lot Clearing",
+          description:
+            "Preparing residential lots for new home construction, additions, or major landscaping projects in Aurora and surrounding cities.",
+          icon: "Home",
+        },
+        {
+          title: "Commercial Site Clearing",
+          description:
+            "Large scale clearing for commercial development, retail sites, and industrial properties throughout the Fox Valley.",
+          icon: "Building",
+        },
+        {
+          title: "Overgrown Property Cleanup",
+          description:
+            "Restoring neglected or overgrown properties to a clean, manageable condition for sale, development, or personal use.",
+          icon: "Sprout",
+        },
+        {
+          title: "Selective Clearing",
+          description:
+            "Targeted removal of specific trees and brush while preserving desirable trees and natural features on the property.",
+          icon: "Target",
+        },
+        {
+          title: "Brush and Undergrowth",
+          description:
+            "Clearing dense brush, saplings, and undergrowth that make properties inaccessible or unusable.",
+          icon: "Scissors",
+        },
+        {
+          title: "Debris Removal",
+          description:
+            "All cleared material including wood, brush, and stumps is removed from the property and disposed of properly.",
+          icon: "Trash2",
+        },
+      ],
+    },
+    topicSectionB: {
+      eyebrow: "Fox Valley Land Clearing",
+      heading: "Trusted Land Clearing Across Aurora and the Fox Valley",
+      subtitle:
+        "Decades of experience clearing properties throughout the Fox Valley for homeowners and developers.",
+      items: [
+        {
+          title: "Local Permit Knowledge",
+          description:
+            "We understand tree removal and land clearing permit requirements for Aurora, Naperville, and surrounding municipalities.",
+          icon: "ClipboardCheck",
+        },
+        {
+          title: "Equipment for Any Job",
+          description:
+            "Excavators, compact track loaders, grapple trucks, and industrial chippers for efficient clearing at any scale.",
+          icon: "Settings",
+        },
+        {
+          title: "Developer Partnerships",
+          description:
+            "We work with builders, contractors, and developers throughout the Fox Valley on site preparation projects.",
+          icon: "Users",
+        },
+        {
+          title: "Responsible Practices",
+          description:
+            "All cleared wood and brush is recycled or disposed of in compliance with local environmental regulations.",
+          icon: "Leaf",
         },
       ],
     },

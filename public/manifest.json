@@ -1,11 +1,11 @@
 {
-  "name": "Premier Services",
-  "short_name": "Premier",
-  "description": "Professional service company delivering premium quality work.",
+  "name": "Martinez Tree Services",
+  "short_name": "Martinez Tree",
+  "description": "Professional tree removal, trimming, stump grinding, and land clearing in Aurora, IL and the Fox Valley.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#3b82f6",
+  "theme_color": "#1b2a4a",
   "icons": [
     {
       "src": "/icon-192.png",

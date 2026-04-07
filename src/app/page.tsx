@@ -116,7 +116,7 @@ export default function HomePage() {
         subtitle={content.process.subtitle}
         bgColor="white"
         primaryCta={{ label: "Get a Quote", href: "/contact" }}
-        secondaryCta={{ label: "Call (555) 123-4567", href: "tel:+15551234567" }}
+        secondaryCta={{ label: "Call (503) 278-6068", href: "tel:+15032786068" }}
       />
 
       {/* Testimonials */}

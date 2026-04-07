@@ -1,85 +1,85 @@
 export const homepageContent = {
   hero: {
-    heading: "Trusted Professional Services in Springfield, IL",
+    heading: "Trusted Tree Service in Aurora, IL",
     subtitle:
-      "Premium quality work, transparent pricing, and full project accountability across Springfield and the surrounding region.",
-    primaryCta: { label: "Get a Quote", href: "/contact" },
-    secondaryCta: { label: "Call (555) 123-4567", href: "tel:+15551234567" },
+      "Martinez Tree Services provides professional tree removal, trimming, stump grinding, and land clearing throughout Aurora and the Fox Valley region. Over 34 years of reliable, family-owned tree care.",
+    primaryCta: { label: "Get a Free Estimate", href: "/contact" },
+    secondaryCta: { label: "Call (503) 278-6068", href: "tel:+15032786068" },
   },
   aboutPreview: {
     eyebrow: "About Us",
     heading:
-      "Your Trusted Service Partner in Springfield and the Surrounding Region",
+      "Your Trusted Tree Service Provider in Aurora and the Fox Valley",
     paragraph:
-      "We are a premium service company based in Springfield, Illinois. For more than 15 years, we have helped property owners across the region turn their vision into reality with meticulous craftsmanship and transparent communication.",
+      "Martinez Tree Services is a family-owned and operated tree care company based in Aurora, Illinois. For more than 34 years, we have provided residential and commercial property owners across the Fox Valley with safe, efficient, and professional tree services. From routine trimming to complete tree removal and land clearing, our experienced crew handles every job with the same level of care and attention.",
     bullets: [
       {
-        title: "Transparent Line-Item Pricing",
+        title: "Free, No Obligation Estimates",
         description:
-          "No hidden fees. You see exactly where your money goes before we start.",
+          "We assess your property and provide a detailed written estimate before any work begins.",
       },
       {
-        title: "Owner-Led Accountability",
+        title: "Owner Operated",
         description:
-          "We lead every project in person. Direct communication at every phase.",
+          "The Martinez family is directly involved in every project, ensuring quality and accountability.",
       },
       {
-        title: "Regional Expertise",
+        title: "Local Fox Valley Expertise",
         description:
-          "Built for the local climate, codes, and conditions of our service area.",
+          "We understand the tree species, soil conditions, and seasonal challenges specific to our region.",
       },
     ],
     image: "about-preview",
-    badge: { value: "15+", label: "Years of Experience" },
+    badge: { value: "34+", label: "Years of Experience" },
   },
   services: {
     eyebrow: "Our Services",
     heading: "What We Do",
     subtitle:
-      "Comprehensive solutions tailored to your needs, delivered with precision and care.",
+      "Comprehensive tree care solutions for residential and commercial properties across Aurora and the Fox Valley.",
   },
   standards: {
     eyebrow: "Our Approach",
-    heading: "The Standard We Hold",
+    heading: "The Standard We Hold for Every Tree Job",
     paragraphs: [
-      "Every project is held to a relentless standard of execution covering initial planning through final completion. This isn't just a marketing promise — it forms the daily operational backbone of every project we manage.",
-      "The quality of professional work is determined long before the finishing touches. It lives in the precision of the schedule, the coordination of complex tasks, and the rigorous oversight that only an owner-led team can guarantee.",
+      "Every tree service project we take on is held to the highest standard of safety, efficiency, and professionalism. From initial assessment through final site cleanup, our crew follows established procedures that protect your property and everyone on site.",
+      "With over three decades in the field, we have refined our approach to tree care. Our team uses professional grade equipment, follows ANSI safety standards, and maintains a clean work site throughout every project.",
     ],
     checklist: [
-      "Documented scope of work before every phase",
-      "Daily coordination with all team members",
-      "Quality-first sequencing and critical hold points",
-      "Clean, organized work sites maintained daily",
-      "Safety protocols enforced rigorously",
-      "Inspection readiness at every checkpoint",
-      "Transparent budget tracking and updates",
-      "Owner-present milestone walkthroughs",
+      "Thorough property and tree assessment before work begins",
+      "Written scope of work and transparent pricing",
+      "Professional grade equipment maintained and inspected regularly",
+      "Full compliance with ANSI tree care safety standards",
+      "Complete debris removal and site cleanup after every job",
+      "Licensed and fully insured for your protection",
+      "Clear communication throughout the entire project",
+      "Owner present on site for all major projects",
     ],
     image: "standards-feature",
-    badge: { value: "250+", label: "Projects Delivered" },
+    badge: { value: "1,000+", label: "Trees Serviced" },
   },
   process: {
     eyebrow: "Our Process",
     heading: "How We Work",
     subtitle:
-      "A proven process refined over 15 years to deliver exceptional results, every time.",
+      "A straightforward, four step process refined over 34 years to deliver safe, professional tree care on every project.",
   },
   testimonials: {
     eyebrow: "Client Reviews",
     heading: "What Our Clients Say",
     subtitle:
-      "Don't just take our word for it. Here's what our clients have to say about working with us.",
+      "Hear from homeowners and property managers across the Fox Valley who trust Martinez Tree Services.",
   },
   faq: {
     eyebrow: "FAQ",
     heading: "Frequently Asked Questions",
     subtitle:
-      "Answers to common questions about our services, process, and what to expect.",
+      "Answers to common questions about our tree services, pricing, and what to expect when working with Martinez Tree Services.",
   },
   cta: {
-    heading: "Ready to Start Your Project?",
-    text: "Schedule a free consultation today and discover why hundreds of clients trust us with their most important projects.",
-    primaryCta: { label: "Get a Quote", href: "/contact" },
-    secondaryCta: { label: "Call (555) 123-4567", href: "tel:+15551234567" },
+    heading: "Ready to Take Care of Your Trees?",
+    text: "Schedule a free estimate today and find out why homeowners and property managers across Aurora and the Fox Valley trust Martinez Tree Services for all their tree care needs.",
+    primaryCta: { label: "Get a Free Estimate", href: "/contact" },
+    secondaryCta: { label: "Call (503) 278-6068", href: "tel:+15032786068" },
   },
 } as const;

@@ -2,26 +2,26 @@ import type { TestimonialItem } from "@/types";
 
 export const testimonials: TestimonialItem[] = [
   {
-    name: "Sarah Mitchell",
-    title: "Homeowner, Springfield",
+    name: "Maria S.",
+    title: "Homeowner, Aurora",
     quote:
-      "From the first consultation to the final walkthrough, the entire experience was exceptional. They communicated every step of the way and the quality of work exceeded our expectations.",
+      "Martinez Tree Services removed two large oak trees from our backyard that were dangerously close to the house. The crew was professional, careful with our landscaping, and cleaned everything up before they left. We felt confident the entire time.",
     rating: 5,
     image: "testimonial-1",
   },
   {
-    name: "James Rodriguez",
-    title: "Property Owner, Shelbyville",
+    name: "David K.",
+    title: "Property Manager, Naperville",
     quote:
-      "I've worked with several companies over the years, but none have matched this level of professionalism. The project was completed on time, on budget, and the attention to detail was incredible.",
+      "We have used Martinez for ongoing tree trimming and maintenance at several commercial properties. They are always on time, their pricing is straightforward, and the quality of work is consistent. After working with them for years, I would not call anyone else.",
     rating: 5,
     image: "testimonial-2",
   },
   {
-    name: "Karen Thompson",
-    title: "Homeowner, Capital City",
+    name: "Jennifer R.",
+    title: "Homeowner, Batavia",
     quote:
-      "What sets them apart is the transparency. We knew exactly where every dollar was going and the owner was personally involved throughout the entire project. That kind of accountability is rare.",
+      "A storm brought down a large limb across our driveway and Martinez was out the next morning to take care of it. They also inspected the rest of the tree and trimmed several other branches that could have been a problem. Great communication from start to finish.",
     rating: 5,
     image: "testimonial-3",
   },

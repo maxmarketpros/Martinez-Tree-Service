@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -11,16 +12,8 @@ import { mainNav } from "@/config/navigation";
 import { cn } from "@/lib/utils";
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -34,25 +27,19 @@ export function Header() {
   }, [mobileOpen]);
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled || mobileOpen
-          ? "bg-white/95 backdrop-blur-md shadow-header"
-          : "bg-transparent"
-      )}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-header">
       <Container>
-        <nav className="flex h-20 items-center justify-between">
+        <nav className="flex h-16 items-center justify-between sm:h-20">
           {/* Logo */}
-          <Link
-            href="/"
-            className={cn(
-              "text-xl font-bold tracking-tight transition-colors",
-              scrolled || mobileOpen ? "text-foreground" : "text-white"
-            )}
-          >
-            {siteConfig.name}
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/logo.png"
+              alt={siteConfig.name}
+              width={180}
+              height={54}
+              priority
+              className="h-10 w-auto sm:h-12"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -66,12 +53,7 @@ export function Header() {
                     onMouseLeave={() => setOpenDropdown(null)}
                   >
                     <button
-                      className={cn(
-                        "flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors",
-                        scrolled
-                          ? "text-foreground-light hover:text-primary-500"
-                          : "text-white/90 hover:text-white"
-                      )}
+                      className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-foreground-light transition-colors hover:text-primary-500"
                     >
                       {item.label}
                       <ChevronDown className="h-3.5 w-3.5" />
@@ -98,12 +80,7 @@ export function Header() {
                 ) : (
                   <Link
                     href={item.href}
-                    className={cn(
-                      "px-4 py-2 text-sm font-medium transition-colors",
-                      scrolled
-                        ? "text-foreground-light hover:text-primary-500"
-                        : "text-white/90 hover:text-white"
-                    )}
+                    className="px-4 py-2 text-sm font-medium text-foreground-light transition-colors hover:text-primary-500"
                   >
                     {item.label}
                   </Link>
@@ -116,12 +93,7 @@ export function Header() {
           <div className="hidden items-center gap-4 lg:flex">
             <a
               href={`tel:${businessConfig.phoneRaw}`}
-              className={cn(
-                "flex items-center gap-2 text-sm font-medium transition-colors",
-                scrolled
-                  ? "text-foreground-light hover:text-primary-500"
-                  : "text-white/90 hover:text-white"
-              )}
+              className="flex items-center gap-2 text-sm font-medium text-foreground-light transition-colors hover:text-primary-500"
             >
               <Phone className="h-4 w-4" />
               {businessConfig.phone}
@@ -133,11 +105,9 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className={cn(
-              "lg:hidden p-2 transition-colors",
-              scrolled || mobileOpen ? "text-foreground" : "text-white"
-            )}
+            type="button"
+            onClick={() => setMobileOpen((prev) => !prev)}
+            className="relative z-[60] p-2 text-foreground lg:hidden"
             aria-label="Toggle menu"
           >
             {mobileOpen ? (
@@ -150,77 +120,73 @@ export function Header() {
       </Container>
 
       {/* Mobile Menu */}
-      <div
-        className={cn(
-          "fixed top-20 left-0 right-0 bottom-0 z-50 overflow-y-auto border-t border-border bg-white transition-opacity duration-300 lg:hidden",
-          mobileOpen
-            ? "visible opacity-100"
-            : "invisible opacity-0 pointer-events-none"
-        )}
-      >
-        <div className="flex flex-col gap-1 p-6">
-          {mainNav.map((item) => (
-            <div key={item.label}>
-              {item.children ? (
-                <>
-                  <button
-                    onClick={() =>
-                      setOpenDropdown(
-                        openDropdown === item.label ? null : item.label
-                      )
-                    }
-                    className="flex w-full items-center justify-between py-3 text-lg font-medium text-foreground"
+      {mobileOpen && (
+        <div className="fixed inset-0 top-16 z-[55] overflow-y-auto border-t border-border bg-white sm:top-20 lg:hidden">
+          <div className="flex flex-col gap-1 p-6">
+            {mainNav.map((item) => (
+              <div key={item.label}>
+                {item.children ? (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setOpenDropdown(
+                          openDropdown === item.label ? null : item.label
+                        )
+                      }
+                      className="flex w-full items-center justify-between py-3 text-lg font-medium text-foreground"
+                    >
+                      {item.label}
+                      <ChevronDown
+                        className={cn(
+                          "h-4 w-4 transition-transform",
+                          openDropdown === item.label && "rotate-180"
+                        )}
+                      />
+                    </button>
+                    {openDropdown === item.label && (
+                      <div className="ml-4 flex flex-col gap-1 border-l-2 border-primary-100 pl-4">
+                        {item.children.map((child) => (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            onClick={() => setMobileOpen(false)}
+                            className="py-2 text-base text-muted transition-colors hover:text-primary-500"
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    href={item.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block py-3 text-lg font-medium text-foreground transition-colors hover:text-primary-500"
                   >
                     {item.label}
-                    <ChevronDown
-                      className={cn(
-                        "h-4 w-4 transition-transform",
-                        openDropdown === item.label && "rotate-180"
-                      )}
-                    />
-                  </button>
-                  {openDropdown === item.label && (
-                    <div className="ml-4 flex flex-col gap-1 border-l-2 border-primary-100 pl-4">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          onClick={() => setMobileOpen(false)}
-                          className="py-2 text-base text-muted transition-colors hover:text-primary-500"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </>
-              ) : (
-                <Link
-                  href={item.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="block py-3 text-lg font-medium text-foreground transition-colors hover:text-primary-500"
-                >
-                  {item.label}
-                </Link>
-              )}
-            </div>
-          ))}
+                  </Link>
+                )}
+              </div>
+            ))}
 
-          <hr className="my-4 border-border" />
+            <hr className="my-4 border-border" />
 
-          <a
-            href={`tel:${businessConfig.phoneRaw}`}
-            className="flex items-center gap-2 py-3 text-lg font-medium text-foreground"
-          >
-            <Phone className="h-5 w-5 text-primary-500" />
-            {businessConfig.phone}
-          </a>
+            <a
+              href={`tel:${businessConfig.phoneRaw}`}
+              className="flex items-center gap-2 py-3 text-lg font-medium text-foreground"
+            >
+              <Phone className="h-5 w-5 text-primary-500" />
+              {businessConfig.phone}
+            </a>
 
-          <Button href="/contact" className="mt-2 w-full" onClick={() => setMobileOpen(false)}>
-            Get a Quote
-          </Button>
+            <Button href="/contact" className="mt-2 w-full" onClick={() => setMobileOpen(false)}>
+              Get a Quote
+            </Button>
+          </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }

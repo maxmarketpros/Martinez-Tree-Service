@@ -16,7 +16,7 @@ import { generateBreadcrumbSchema } from "@/lib/structured-data";
 export const metadata: Metadata = generatePageMetadata({
   title: "About Us",
   description:
-    "Learn about our story, values, and the experience that drives our commitment to quality. Over 15 years of trusted service.",
+    "Learn about Martinez Tree Services, a family-owned tree care company with over 34 years of experience serving Aurora, IL and the Fox Valley region.",
   path: "/about",
 });
 
@@ -47,7 +47,7 @@ export default function AboutPage() {
         imageKey="about-hero"
         breadcrumbs={breadcrumbs}
         primaryCta={{ label: "Get a Quote", href: "/contact" }}
-        secondaryCta={{ label: "Call (555) 123-4567", href: "tel:+15551234567" }}
+        secondaryCta={{ label: "Call (503) 278-6068", href: "tel:+15032786068" }}
       />
 
       {/* Story Section */}
@@ -118,7 +118,7 @@ export default function AboutPage() {
       <ProcessGrid
         eyebrow="Our Process"
         heading="How Every Project Works"
-        subtitle="A proven four-step process refined over 15 years of delivering excellence."
+        subtitle="A proven four-step process refined over 34 years of professional tree care."
         primaryCta={{ label: "Get a Quote", href: "/contact" }}
       />
 

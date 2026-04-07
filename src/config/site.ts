@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Premier Services",
-  tagline: "Quality Craftsmanship, Trusted Results",
+  name: "Martinez Tree Services",
+  tagline: "Professional Tree Care for the Fox Valley",
   description:
-    "Professional service company delivering premium quality work with transparent pricing, owner-led accountability, and over 15 years of trusted experience.",
-  url: "https://example.com",
+    "Martinez Tree Services provides trusted tree removal, tree trimming, stump removal, and land clearing in Aurora, IL and the Fox Valley region. Over 34 years of professional tree care experience.",
+  url: "https://martineztreeremoval.com",
   ogImage: "/images/og-image.jpg",
   social: {
     facebook: "https://facebook.com/",

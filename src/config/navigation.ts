@@ -7,9 +7,10 @@ export const mainNav: NavItem[] = [
     label: "Services",
     href: "/services",
     children: [
-      { label: "Service One", href: "/services/service-one" },
-      { label: "Service Two", href: "/services/service-two" },
-      { label: "Service Three", href: "/services/service-three" },
+      { label: "Tree Removal", href: "/services/tree-removal" },
+      { label: "Tree Trimming and Pruning", href: "/services/tree-trimming-and-pruning" },
+      { label: "Stump Removal", href: "/services/stump-removal" },
+      { label: "Lot and Land Clearing", href: "/services/lot-and-land-clearing" },
     ],
   },
   { label: "FAQ", href: "/#faq" },
@@ -20,9 +21,10 @@ export const footerGroups: FooterGroup[] = [
   {
     title: "Services",
     links: [
-      { label: "Service One", href: "/services/service-one" },
-      { label: "Service Two", href: "/services/service-two" },
-      { label: "Service Three", href: "/services/service-three" },
+      { label: "Tree Removal", href: "/services/tree-removal" },
+      { label: "Tree Trimming and Pruning", href: "/services/tree-trimming-and-pruning" },
+      { label: "Stump Removal", href: "/services/stump-removal" },
+      { label: "Lot and Land Clearing", href: "/services/lot-and-land-clearing" },
     ],
   },
   {

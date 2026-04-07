@@ -24,23 +24,37 @@ export function generateLocalBusinessSchema() {
       latitude: businessConfig.coordinates.lat,
       longitude: businessConfig.coordinates.lng,
     },
-    openingHoursSpecification: businessConfig.hours.structured.map((h) => ({
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: h.days.split("-").map((d) => {
-        const map: Record<string, string> = {
-          Mo: "Monday",
-          Tu: "Tuesday",
-          We: "Wednesday",
-          Th: "Thursday",
-          Fr: "Friday",
-          Sa: "Saturday",
-          Su: "Sunday",
-        };
-        return map[d] || d;
-      }),
-      opens: h.opens,
-      closes: h.closes,
-    })),
+    openingHoursSpecification: businessConfig.hours.structured.map((h) => {
+      const dayMap: Record<string, string> = {
+        Mo: "Monday",
+        Tu: "Tuesday",
+        We: "Wednesday",
+        Th: "Thursday",
+        Fr: "Friday",
+        Sa: "Saturday",
+        Su: "Sunday",
+      };
+      const allDays = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
+      const parts = h.days.split("-");
+      let days: string[];
+      if (parts.length === 2) {
+        const startIdx = allDays.indexOf(parts[0]);
+        const endIdx = allDays.indexOf(parts[1]);
+        if (startIdx !== -1 && endIdx !== -1) {
+          days = allDays.slice(startIdx, endIdx + 1).map((d) => dayMap[d]);
+        } else {
+          days = parts.map((d) => dayMap[d] || d);
+        }
+      } else {
+        days = parts.map((d) => dayMap[d] || d);
+      }
+      return {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: days,
+        opens: h.opens,
+        closes: h.closes,
+      };
+    }),
     areaServed: businessConfig.serviceAreas.map((area) => ({
       "@type": "City",
       name: area,

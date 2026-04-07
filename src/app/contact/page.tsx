@@ -31,14 +31,14 @@ export default function ContactPage() {
 
       <PageHero
         heading="Contact Us"
-        subtitle="Ready to start your project? Get in touch and let's discuss how we can help."
+        subtitle="Ready to get started? Contact Martinez Tree Services for a free estimate on tree removal, trimming, stump grinding, or land clearing."
         imageKey="contact-hero"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Contact" },
         ]}
         primaryCta={{ label: "Get a Quote", href: "#quote" }}
-        secondaryCta={{ label: "Call (555) 123-4567", href: "tel:+15551234567" }}
+        secondaryCta={{ label: "Call (503) 278-6068", href: "tel:+15032786068" }}
       />
 
       <QuoteSection id="quote" />

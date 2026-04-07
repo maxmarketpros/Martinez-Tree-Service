@@ -1,16 +1,16 @@
 export const aboutContent = {
   hero: {
-    heading: "About Us",
+    heading: "About Martinez Tree Services",
     subtitle:
-      "Discover the story, values, and experience behind our commitment to quality.",
+      "Over 34 years of professional tree care in Aurora, IL and the Fox Valley region.",
   },
   story: {
     eyebrow: "Our Story",
-    heading: "Built on Experience. Driven by Standards.",
+    heading: "Family Owned. Built on Experience.",
     paragraphs: [
-      "We believe the best service professionals are the ones who have actually done the work themselves. Our company wasn't built in an office — it was forged through years of hands-on experience in the field.",
-      "Our foundational roots go deep into the core of our craft. Before becoming a leading service provider in the region, we mastered the fundamental skills that separate good work from great work.",
-      "This hands-on background gives us a unique advantage. When our team manages a project, we aren't just looking at spreadsheets. We understand the quality required because we've done the work ourselves. This translates to higher standards, better problem-solving, and a superior finished product for our clients.",
+      "Martinez Tree Services was founded over 34 years ago as a family-run tree care company serving the Fox Valley area. What started as a small operation has grown into one of the most trusted tree service providers in Aurora, Illinois and the surrounding communities.",
+      "Our team has spent decades working hands on with every type of tree care challenge the Fox Valley presents. From large scale removals in tight residential spaces to routine trimming programs for commercial properties, we have built our reputation through consistent, quality work.",
+      "That hands on experience is what sets us apart. When our crew arrives at your property, we are not guessing. We understand the tree species common to this region, the soil and weather conditions that affect tree health, and the safest approach for every situation. This knowledge translates to better results and greater peace of mind for our clients.",
     ],
     image: "about-story",
   },
@@ -19,33 +19,33 @@ export const aboutContent = {
     heading: "What We Stand For",
     items: [
       {
-        title: "Integrity First",
+        title: "Safety Above All",
         description:
-          "We do what we say we'll do, every time. Our reputation is built on keeping promises.",
+          "Every crew member follows strict safety protocols and ANSI standards on every job site, every day.",
       },
       {
-        title: "Quality Without Compromise",
+        title: "Quality Workmanship",
         description:
-          "We never cut corners. Every project receives our full attention and highest standards.",
+          "We take pride in doing the job right the first time, using professional grade equipment and proven techniques.",
       },
       {
-        title: "Transparent Communication",
+        title: "Honest, Transparent Pricing",
         description:
-          "You'll always know where your project stands. No guessing, no chasing updates.",
+          "You receive a detailed written estimate before any work begins. No hidden fees and no surprises.",
       },
       {
-        title: "Community Commitment",
+        title: "Community Roots",
         description:
-          "We live and work in this community. Your success is our success.",
+          "We live and work in the Fox Valley. Our neighbors are our clients, and their satisfaction is our reputation.",
       },
     ],
   },
   team: {
-    eyebrow: "Owner-Led",
+    eyebrow: "Owner Operated",
     heading: "Personally Invested in Every Project",
     paragraphs: [
-      "Every project we take on receives direct owner involvement. This isn't a large corporation where your project gets passed between departments — you work directly with the person whose name is on the business.",
-      "This level of personal investment means faster decisions, higher accountability, and a genuine commitment to your satisfaction that you simply can't get from larger operations.",
+      "When you hire Martinez Tree Services, you work directly with the family that owns and operates the business. We are personally present on major projects and directly accessible for every question and concern.",
+      "This level of owner involvement means faster decisions, higher accountability, and a genuine commitment to the quality of work we deliver. We treat every property as if it were our own, because our name and our reputation are on every job we complete.",
     ],
     image: "about-team",
   },

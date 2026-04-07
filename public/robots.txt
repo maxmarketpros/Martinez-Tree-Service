@@ -1,5 +1,5 @@
-# robots.txt — Update the Sitemap URL when deploying to a real domain
+# robots.txt
 User-agent: *
 Allow: /
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://martineztreeremoval.com/sitemap.xml

@@ -58,11 +58,11 @@ export default async function ServicePage({ params }: ServicePageProps) {
   }
 
   const featureListItems = service.detailImages.map((imgKey, i) => ({
-    title: i === 0 ? "Quality You Can See" : "Results That Last",
+    title: i === 0 ? "Professional Equipment and Techniques" : "Clean Results You Can Count On",
     description:
       i === 0
-        ? "Every project showcases our commitment to precision and craftsmanship. We take pride in delivering work that stands out for its quality and attention to detail."
-        : "Our work is built to last. We use premium materials and proven techniques to ensure your investment delivers value for years to come.",
+        ? "Our crew uses professional grade equipment maintained to the highest standards. Combined with decades of hands on experience, we deliver safe and efficient results on every project."
+        : "We take pride in leaving your property looking its best. Complete debris removal, thorough cleanup, and attention to detail are standard on every job we complete.",
     imageKey: imgKey,
   }));
 

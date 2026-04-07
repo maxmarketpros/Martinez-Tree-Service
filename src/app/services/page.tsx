@@ -10,7 +10,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = generatePageMetadata({
   title: "Our Services",
   description:
-    "Explore our comprehensive range of professional services. From initial consultation to final completion, we deliver quality you can trust.",
+    "Professional tree removal, tree trimming, stump grinding, and land clearing services in Aurora, IL and the Fox Valley. Free estimates from Martinez Tree Services.",
   path: "/services",
 });
 
@@ -19,7 +19,7 @@ export default function ServicesPage() {
     <>
       <PageHero
         heading="Our Services"
-        subtitle="Comprehensive solutions delivered with precision, transparency, and care."
+        subtitle="Professional tree care solutions for residential and commercial properties across Aurora and the Fox Valley."
         imageKey="service-1-hero"
         breadcrumbs={[
           { label: "Home", href: "/" },
@@ -38,8 +38,8 @@ export default function ServicesPage() {
       </section>
 
       <CTASection
-        heading="Not Sure Which Service You Need?"
-        text="Contact us for a free consultation. We'll assess your needs and recommend the best approach."
+        heading="Not Sure Which Tree Service You Need?"
+        text="Contact us for a free on site assessment. We will evaluate your trees and recommend the best approach for your property."
         primaryCta={{ label: "Get a Quote", href: "/contact" }}
       />
 
